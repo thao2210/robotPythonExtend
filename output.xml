@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.13 on win32)" generated="2024-03-01T10:07:13.123596" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFW" source="C:\Project\pythonProject\RobotFW">
+<suite id="s1-s1" name="Tests" source="C:\Project\pythonProject\RobotFW\Tests">
+<suite id="s1-s1-s1" name="Add To Cart" source="C:\Project\pythonProject\RobotFW\Tests\add_to_cart.robot">
+<test id="s1-s1-s1-t1" name="Add Shoping Item To Cart" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-01T10:07:13.630316" level="INFO">Opening browser 'Chrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>${Icon_ShopSeleniumBook}</arg>
+<tag>plugin</tag>
+<doc>Overwrite existing keyword.</doc>
+<status status="PASS" start="2024-03-01T10:07:13.630316" elapsed="14.455889"/>
+</kw>
+<kw name="Add Cart" owner="SeleniumLibrary">
+<msg time="2024-03-01T10:07:28.086205" level="INFO">Clicking element '//a[text()='Shop']'.</msg>
+<msg time="2024-03-01T10:07:30.990436" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.131")&gt;'.</msg>
+<msg time="2024-03-01T10:07:32.107681" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.132")&gt;'.</msg>
+<msg time="2024-03-01T10:07:33.185121" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.133")&gt;'.</msg>
+<msg time="2024-03-01T10:07:34.260425" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.134")&gt;'.</msg>
+<msg time="2024-03-01T10:07:35.340832" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.135")&gt;'.</msg>
+<msg time="2024-03-01T10:07:36.449210" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.136")&gt;'.</msg>
+<msg time="2024-03-01T10:07:37.531031" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.137")&gt;'.</msg>
+<msg time="2024-03-01T10:07:38.609984" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="e5a2820340504e2a0670b9b483259c26", element="f.9969955A09A29BF6EFBE0FD737B9A338.d.A189A13144AE2DEADD7E3C0A417AEE48.e.138")&gt;'.</msg>
+<msg time="2024-03-01T10:07:39.935743" level="INFO">[{'Android Quick Start Guide': '₹450.00'}, {'Functional Programming in JS': '₹250.00'}, {'HTML5 Forms': '₹280.00'}, {'HTML5 WebApp Develpment': '₹180.00'}, {'JS Data Structures and Algorithm': '₹150.00'}, {'Mastering JavaScript': '₹350.00'}, {'Selenium Ruby': '₹500.00'}, {'Thinking in HTML': '₹400.00'}]</msg>
+<msg time="2024-03-01T10:07:39.935743" level="INFO">${listItem} = [{'Android Quick Start Guide': '₹450.00'}, {'Functional Programming in JS': '₹250.00'}, {'HTML5 Forms': '₹280.00'}, {'HTML5 WebApp Develpment': '₹180.00'}, {'JS Data Structures and Algorithm': '₹150.0...</msg>
+<var>${listItem}</var>
+<arg>${Icon_Shop}</arg>
+<arg>${Button_AddToBasKet}</arg>
+<arg>${Title_Item}</arg>
+<arg>${Price_Item}</arg>
+<tag>plugin</tag>
+<doc>Adding new keyword.</doc>
+<status status="PASS" start="2024-03-01T10:07:28.086205" elapsed="11.849538"/>
+</kw>
+<kw name="Get Item In Cart" owner="SeleniumLibrary">
+<msg time="2024-03-01T10:07:39.935743" level="INFO">Clicking element '//span[@class='cartcontents']'.</msg>
+<msg time="2024-03-01T10:07:44.062728" level="INFO">[{'Android Quick Start Guide': '₹450.00'}, {'Functional Programming in JS': '₹250.00'}, {'HTML5 Forms': '₹280.00'}, {'HTML5 WebApp Develpment': '₹180.00'}, {'JS Data Structures and Algorithm': '₹150.00'}, {'Mastering JavaScript': '₹350.00'}, {'Selenium Ruby': '₹500.00'}, {'Thinking in HTML': '₹400.00'}]</msg>
+<msg time="2024-03-01T10:07:44.062728" level="INFO">[{'Android Quick Start Guide': '₹450.00'}, {'Functional Programming in JS': '₹250.00'}, {'HTML5 Forms': '₹280.00'}, {'HTML5 WebApp Develpment': '₹180.00'}, {'JS Data Structures and Algorithm': '₹150.00'}, {'Mastering JavaScript': '₹350.00'}, {'Selenium Ruby': '₹500.00'}, {'Thinking in HTML': '₹400.00'}]</msg>
+<arg>${Button_Cart}</arg>
+<arg>${Title_Item_Cart}</arg>
+<arg>${Price_Item_Cart}</arg>
+<arg>${listItem}</arg>
+<tag>plugin</tag>
+<doc>Adding new keyword.</doc>
+<status status="PASS" start="2024-03-01T10:07:39.935743" elapsed="4.134069"/>
+</kw>
+<doc>Example test case for plugin api on  using Robot Framework</doc>
+<status status="PASS" start="2024-03-01T10:07:13.615696" elapsed="30.454116"/>
+</test>
+<status status="PASS" start="2024-03-01T10:07:13.186202" elapsed="30.883610"/>
+</suite>
+<status status="PASS" start="2024-03-01T10:07:13.186202" elapsed="30.883610"/>
+</suite>
+<status status="PASS" start="2024-03-01T10:07:13.151383" elapsed="30.927029"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotFW">RobotFW</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">RobotFW.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Add To Cart">RobotFW.Tests.Add To Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

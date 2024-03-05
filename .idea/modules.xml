@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/RobotFW.iml" filepath="$PROJECT_DIR$/.idea/RobotFW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../SeleniumPython/SeleniumLibrary/.idea/SeleniumLibrary.iml" filepath="$PROJECT_DIR$/../../SeleniumPython/SeleniumLibrary/.idea/SeleniumLibrary.iml" />
+    </modules>
+  </component>
+</project>
