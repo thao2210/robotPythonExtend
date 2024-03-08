@@ -6,7 +6,7 @@ class ImdbHomePage(LibraryComponent):
         LibraryComponent.__init__(self, ctx)
 
     @keyword
-    def click_on_menu(self, menu):
+    def click_on_menu_icon(self, menu):
         self.ctx.wait_until_element_is_visible(menu)
         self.ctx.click_element(menu)
 

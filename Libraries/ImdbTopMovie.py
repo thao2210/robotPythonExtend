@@ -7,10 +7,13 @@ class ImdbTopMovie(LibraryComponent):
         LibraryComponent.__init__(self, ctx)
 
     @keyword
-    def click_on_sort_and_verify(self, labelPage, sortButton, option, imdbRating):
+    def choose_sort_option(self, labelPage, option):
         self.ctx.wait_until_element_is_visible(labelPage)
         self.ctx.click_element(option)
         time.sleep(2)
+
+    @keyword
+    def verify_sorted_data(self, imdbRating):
         listNumbImdb = []
         ratingList = self.ctx.find_elements(imdbRating)
         for item in ratingList:
